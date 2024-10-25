@@ -3,9 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "tinacms dev -c \"astro dev\"",
-    "start": "astro start",
-    "build": "astro build",
+    "dev": "npx tinacms dev -c \"astro dev\"",
+    "start": "astro dev",
+    "build": "npx tinacms build --local --skip-cloud-checks & sleep 4 && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
